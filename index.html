@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cyber Security Summer Camp</title>
+    <style>
+        :root {
+            --primary-color: #0d1117; /* Dark background */
+            --secondary-color: #39ff14; /* Neon green */
+            --background-color: #010409;
+            --card-bg-color: #161b22;
+            --text-color: #c9d1d9; /* Light grey text */
+            --border-color: #222933;
+            --glow-color: rgba(57, 255, 20, 0.4);
+        }
+        body { 
+            font-family: 'Roboto Mono', monospace; 
+            line-height: 1.6; 
+            margin: 0; 
+            background-color: var(--background-color);
+            color: var(--text-color);
+            text-shadow: 0 0 2px rgba(57, 255, 20, 0.1);
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 2px solid var(--secondary-color);
+            margin-bottom: 2rem;
+            text-shadow: 0 0 8px var(--glow-color);
+        }
+        h1, h2, h3, h4 { color: var(--secondary-color); }
+        header h1 { font-size: 2.5rem; }
+        header p { color: var(--text-color); }
+        .card { 
+            background-color: var(--card-bg-color);
+            border: 1px solid var(--border-color); 
+            border-radius: 12px; 
+            padding: 1.5em; 
+            margin-bottom: 1.5em; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            transition: all 0.3s ease;
+        }
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .card ul li {
+            padding-left: 1.5em;
+            text-indent: -1.5em;
+            margin-bottom: 0.5em;
+        }
+        .schedule-table { width: 100%; border-collapse: collapse; }
+        .schedule-table th, .schedule-table td { border: 1px solid var(--border-color); padding: 12px; text-align: left; }
+        .schedule-table th { background-color: var(--primary-color); color: var(--secondary-color); }
+        .schedule-table tr:nth-child(even) { background-color: #1c222b; }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5em;
+        }
+        .cta-button {
+            background-color: transparent;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            width: fit-content;
+            margin: 2rem auto;
+            text-decoration: none;
+            text-shadow: 0 0 5px var(--glow-color);
+        }
+        .cta-button:hover, .price-card a:hover {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 0 15px var(--glow-color);
+            text-shadow: none;
+        }
+        #payment-success {
+            text-align: center;
+            color: var(--success-color);
+            border-left: 5px solid var(--success-color);
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 2.5rem 1rem;
+            background-color: var(--primary-color);
+            color: #8b949e;
+            border-top: 2px solid var(--secondary-color);
+        }
+        .price-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5em;
+            text-align: center;
+            margin-bottom: 1.5em;
+        }
+        .price-card {
+            background-color: var(--card-bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5em;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            transition: all 0.3s ease;
+        }
+        .price-card h3 {
+            color: var(--text-color);
+            font-weight: 700;
+        }
+        .price-card .price {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛡️ Cyber Security Summer Camp</h1>
+            <p>A hands-on, beginner-friendly camp where students learn the basics of cyber security.</p>
+        </header>
+
+        <div class="grid-container">
+            <section class="card">
+                <h2>👥 Who It's For</h2>
+                <ul>
+                    <li>🧑‍💻 Students aged 11–16.</li>
+                    <li>❓ No prior technical knowledge required.</li>
+                    <li>💡 Ideal for anyone interested in computers, hacking, problem-solving, or online safety.</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>🎯 Main Learning Goals</h2>
+                <ul>
+                    <li>🛡️ Understand fundamental cyber security concepts.</li>
+                    <li>🧠 Learn how hackers think (in a legal & ethical way).</li>
+                    <li>🎣 Practice identifying phishing, scams, and social engineering.</li>
+                    <li>🛠️ Try simple ethical hacking tools in a safe, offline environment.</li>
+                    <li>🔐 Learn how to secure accounts, devices, and networks.</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="card">
+            <h2>📅 Camp Schedule</h2>
+            <p><strong>Date:</strong> July 20–24, 2026 (Monday–Friday)</p>
+            <p><strong>Time:</strong> 09:00–16:00</p>
+            
+            <h4>Daily Structure</h4>
+            <table class="schedule-table">
+                <tr><th>Time</th><th>Activity</th></tr>
+                <tr><td>09:00–09:30</td><td>Warm-up & problem-solving games</td></tr>
+                <tr><td>09:30–11:00</td><td>Cyber security lesson (daily theme)</td></tr>
+                <tr><td>11:00–11:20</td><td>Break</td></tr>
+                <tr><td>11:20–12:30</td><td>Practical workshop (hacking demo / coding task)</td></tr>
+                <tr><td>12:30–13:15</td><td>Lunch</td></tr>
+                <tr><td>13:15–14:30</td><td>Team challenge</td></tr>
+                <tr><td>14:30–15:30</td><td>Project work on the "Cyber Defense Challenge"</td></tr>
+                <tr><td>15:30–16:00</td><td>Daily Wrap-up & Review</td></tr>
+            </table>
+
+            <h4 style="margin-top: 1.5em;">Day-by-day Program</h4>
+            <table class="schedule-table">
+                <tr><th>Day</th><th>Topic</th></tr>
+                <tr><td>Monday</td><td>Introduction to Cyber Security: passwords, encryption basics</td></tr>
+                <tr><td>Tuesday</td><td>Social Engineering: phishing, scams, fake websites</td></tr>
+                <tr><td>Wednesday</td><td>Network Basics: Wi-Fi safety, simple packet analysis</td></tr>
+                <tr><td>Thursday</td><td>Ethical Hacking Day: safe sandbox hacking activities</td></tr>
+                <tr><td>Friday</td><td>Cyber Defense Challenge & Certificates</td></tr>
+            </table>
+        </section>
+
+        <div class="price-grid">
+            <div class="price-card">
+                <h3>Early-Bird Discount</h3>
+                <p>Register before May 1</p>
+                <div class="price">€140</div>
+                <a href="https://buy.stripe.com/test_14A8wPef49cD0sZdFTfIs01" class="cta-button" target="_blank">Register Now</a>
+                <p style="font-size: 0.8rem;">Sibling discount: 10% off</p>
+            </div>
+
+            <div class="price-card">
+                <h3>Standard Price</h3>
+                <p>Registration after May 1</p>
+                <div class="price">€160</div>
+                <a href="https://buy.stripe.com/test_dRmfZh7QGewXgrX8lzfIs00" class="cta-button" target="_blank">Register Now</a>
+                <p style="font-size: 0.8rem;">Sibling discount: 10% off</p>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <section class="card">
+                <h2>🎒 What to Bring</h2>
+                <ul>
+                    <li>💻 Laptop (if possible) or camp-provided device</li>
+                    <li>🎧 Headphones</li>
+                    <li>📓 Notebook & pen</li>
+                    <li>🥪 Packed lunch and water bottle</li>
+                    <li>👕 Comfortable clothes</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>👨‍🏫 Safety & Supervision</h2>
+                <ul>
+                    <li>✅ All instructors are background-checked and experienced in teaching youth.</li>
+                    <li>🔒 Activities are conducted in a closed, safe digital environment.</li>
+                    <li>🚫 There is no access to real public networks or illegal tools.</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="card">
+            <h2> Location & Final Presentation</h2>
+            <p><strong>Location:</strong> City center tech classroom / computer lab. The exact address will be sent to registered participants.</p>
+            <p><strong>Final Presentation:</strong> On Friday, parents are invited to see a short demo of the students’ cyber security projects.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Cyber Security Summer Camp. Secure your spot today!</p>
+            <p style="font-size: 0.8rem; color: #484f58;">&gt; Page design by Gemini Code Assist_</p>
+        </footer>
+    </div>
+
+</body>
+</html>

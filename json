@@ -1,0 +1,92 @@
+{
+  "camp": {
+    "title": "Cyber Security Summer Camp",
+    "tagline": "A hands-on, beginner-friendly camp to learn the basics of cyber security.",
+    "focus": [
+      "Safe internet use",
+      "Ethical hacking concepts",
+      "Password security",
+      "Encryption",
+      "Real-life digital threats"
+    ],
+    "includes": [
+      "Practical workshops",
+      "Team challenges",
+      "Small projects"
+    ],
+    "targetAudience": {
+      "ageRange": "11-16",
+      "prerequisites": "No prior technical knowledge required.",
+      "idealFor": [
+        "Anyone interested in computers",
+        "Hacking",
+        "Problem-solving",
+        "Online safety"
+      ]
+    },
+    "learningGoals": [
+      "Understand fundamental cyber security concepts.",
+      "Learn how hackers think (in a legal & ethical way).",
+      "Practice identifying phishing, scams, and social engineering.",
+      "Try simple ethical hacking tools in a safe, offline environment.",
+      "Learn how to secure accounts, devices, and networks.",
+      "Work on a group 'Cyber Defense Challenge' project."
+    ],
+    "schedule": {
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-24",
+      "days": "Monday-Friday",
+      "time": "09:00-16:00",
+      "dailyStructure": [
+        { "time": "09:00-09:30", "activity": "Warm-up & problem-solving games" },
+        { "time": "09:30-11:00", "activity": "Cyber security lesson (daily theme)" },
+        { "time": "11:00-11:20", "activity": "Break" },
+        { "time": "11:20-12:30", "activity": "Practical workshop (hacking demo / coding task)" },
+        { "time": "12:30-13:15", "activity": "Lunch" },
+        { "time": "13:15-14:30", "activity": "Team challenge" },
+        { "time": "14:30-15:30", "activity": "Project work" },
+        { "time": "15:30-16:00", "activity": "Wrap-up" }
+      ],
+      "dailyProgram": [
+        { "day": "Monday", "topic": "Introduction to Cyber Security: passwords, encryption basics" },
+        { "day": "Tuesday", "topic": "Social Engineering: phishing, scams, fake websites" },
+        { "day": "Wednesday", "topic": "Network Basics: Wi-Fi safety, simple packet analysis" },
+        { "day": "Thursday", "topic": "Ethical Hacking Day: safe sandbox hacking activities" },
+        { "day": "Friday", "topic": "Cyber Defense Challenge & Certificates" }
+      ]
+    },
+    "pricing": {
+      "basePrice": 160,
+      "currency": "EUR",
+      "discounts": {
+        "earlyBird": {
+          "price": 140,
+          "deadline": "May 1"
+        },
+        "sibling": {
+          "percentage": 10,
+          "description": "10% off the second child"
+        }
+      }
+    },
+    "whatToBring": [
+      "Laptop (if possible) or camp-provided device",
+      "Headphones",
+      "Notebook & pen",
+      "Packed lunch and water bottle",
+      "Comfortable clothes"
+    ],
+    "location": {
+      "type": "City center tech classroom / computer lab",
+      "details": "Exact address sent after registration"
+    },
+    "safety": {
+      "supervision": "All instructors background-checked and experienced in teaching youth.",
+      "environment": "Activities done in a closed, safe digital environment.",
+      "tools": "No access to real networks or illegal tools."
+    },
+    "finalPresentation": {
+      "description": "On Friday, parents are invited to see a short demo of the students’ cyber security projects."
+    }
+  }
+}
